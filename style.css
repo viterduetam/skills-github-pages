@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background: #f0f0f0;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+form#add-event-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+form#add-event-form input[type="text"],
+form#add-event-form input[type="date"],
+form#add-event-form input[type="time"] {
+    padding: 5px;
+    font-size: 16px;
+}
+
+form#add-event-form button {
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#countdown-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.countdown {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    min-width: 220px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.countdown .event-name {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.countdown .time-remaining {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.countdown .buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.countdown button {
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    font-size: 14px;
+}
+
+.countdown button.delete-event {
+    background: #e74c3c;
+    color: #fff;
+}
+
+.countdown button.delete-event:hover {
+    background: #c0392b;
+}
+
+.countdown button.edit-event {
+    background: #3498db;
+    color: #fff;
+}
+
+.countdown button.edit-event:hover {
+    background: #2980b9;
+}
