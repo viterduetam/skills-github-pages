@@ -29,7 +29,7 @@ function loadEventsFromSheet() {
             const eventsFromSheet = parseCSV(csvData);
             // Очікуємо колонки: name, date, time
             events = eventsFromSheet.map(e => {
-                const eventTime = new Date(`${e.date} ${e.time}`).getTime();
+                const eventTime = new Date(`${e.date}T${e.time}`).getTime();
                 return {
                     id: Date.now() + Math.random(),
                     name: e.name,
