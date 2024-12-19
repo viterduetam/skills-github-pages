@@ -1,7 +1,5 @@
 // Вставте ваш URL до опублікованого CSV
 const sheetUrl = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSma72n2A3Ix2t24N5M1sVX4Rj8hPIIW9wNgsTVGT3Ux0HTq3evn9LlIYBQovR5hxad0kXnPaXjPpYT/pub?output=csv';
-const eventTime = new Date("2025-01-27T08:00").getTime();
-console.log(eventTime);
 
 let events = [];
 const countdownContainer = document.getElementById('countdown-container');
